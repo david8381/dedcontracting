@@ -1,0 +1,88 @@
+:root {
+  --bg: #f6f7f9;
+  --panel: #ffffff;
+  --text: #1d1f24;
+  --muted: #4a5260;
+  --accent: #0f5cc0;
+  --border: #d8dee8;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif;
+  background: linear-gradient(180deg, #f6f7f9 0%, #eef1f7 100%);
+  color: var(--text);
+  line-height: 1.55;
+}
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+.hero {
+  padding: 1.5rem;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--accent);
+  font-weight: 700;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  font-size: .78rem;
+}
+
+h1 {
+  margin: .35rem 0 .4rem;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+}
+
+.lead {
+  margin: 0 0 .5rem;
+  font-size: 1.08rem;
+  font-weight: 600;
+}
+
+.copy { margin: 0; color: var(--muted); }
+
+.card {
+  margin-top: 1rem;
+  padding: 1.2rem 1.3rem;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+
+h2 {
+  margin: 0 0 .55rem;
+  font-size: 1.15rem;
+}
+
+ul { margin: .2rem 0 0 1.2rem; }
+
+a { color: var(--accent); }
+
+.footer {
+  margin-top: 1.25rem;
+  padding: 1rem;
+  color: var(--muted);
+  font-size: .94rem;
+}
+
+.footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .9rem;
+  margin-bottom: .5rem;
+}
+
+@media (max-width: 600px) {
+  .container { padding: 1rem .8rem 2rem; }
+  .hero, .card { padding: 1rem; }
+}
