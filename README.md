@@ -3,7 +3,8 @@
 Static public website for dedcontracting.com.
 
 ## Files
-- `index.html` — main splash page for Workflow Canary
+- `index.html` — main DED Contracting products/services page
+- `workflow-canary.html` — product page for Workflow Canary
 - `privacy.html` — privacy policy
 - `terms.html` — terms of service
 - `refund.html` — refund and cancellation policy
